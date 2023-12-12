@@ -1,0 +1,31 @@
+---
+import LandingHeader from "../components/LandingHeader.astro";
+import IngDnSection from "../components/IngDnSection.astro";
+import IngTicSection from "../components/IngTicSection.astro";
+
+import LayoutIngenieria from "../layouts/LayoutIngenieria.astro";
+
+---
+
+<body class="bg-zinc-800">
+    <LayoutIngenieria title="UTZAC - Ingenieria">
+      
+        <LandingHeader />
+    
+        <main class="snap-y snap-mandatory relative w-full h-screen overflow-auto">
+    
+            <div class="snap-center">
+                <IngDnSection />
+            </div> 
+    
+    
+            <div class="snap-center">
+               <IngTicSection />
+                
+            </div>        
+    
+        </main>
+    
+    
+    </LayoutIngenieria>
+</body>

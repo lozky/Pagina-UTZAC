@@ -1,0 +1,30 @@
+---
+import LandingHeader from "../components/LandingHeader.astro";
+import TsuTicSection from "../components/TsuTicSection.astro";
+import TsuDnSection from "../components/TsuDnSection.astro";
+
+import LayoutCarreras from "../layouts/LayoutCarreras.astro";
+
+---
+
+<body class="bg-zinc-800">
+    <LayoutCarreras title="UTZAC - TSU">
+      
+        <LandingHeader />
+    
+        <main class="snap-y snap-mandatory relative w-full h-screen overflow-auto scroll">
+    
+            <div class="snap-center">
+                <TsuTicSection />
+            </div> 
+    
+    
+            <div class="snap-center">
+                <TsuDnSection />
+            </div>        
+    
+        </main>
+    
+    
+    </LayoutCarreras>
+</body>
